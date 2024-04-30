@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul>
+
+
+  </ul>
+  
+  <script>
+    const ul = document.querySelector('ul') // <ul></ul>
+    let message = prompt('Enter the words')
+
+    while (!(message === null || message.trim() === "")){
+      const li = document.createElement('li') //<li></li>
+      li.textContent = message // <li>  input message </li>
+      ul.append(li)  //<ul> ... <li> user input </li></ul>
+      message = prompt('Enter the words')
+    }
+
+
+
+  </script>
+</body>
+</html>

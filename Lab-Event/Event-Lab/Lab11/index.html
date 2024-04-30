@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div{
+      display: flex;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <button class="add">add</button>
+    <p>0</p>
+    <button class="minus">minus</button>
+    <button class="reset">reset</button>
+
+    <script>
+      const buttonAdd = document.querySelector('.add')
+      const buttonMinus = document.querySelector('.minus')
+      const p = document.querySelector('p')
+      const buttonReset = document.querySelector('.reset')
+
+      buttonAdd.addEventListener('click',()=> {
+        let num = +p.innerHTML 
+        let count = num+1;
+        p.innerText = count
+      })
+
+      buttonMinus.addEventListener('click',()=> {
+        let num = +p.innerHTML 
+        if(num>0){
+          let count = num-1;
+          p.innerText = count
+        }
+      })
+
+      buttonReset.addEventListener('click',()=>{
+        let num = +p.innerHTML 
+        let count =0*num
+        p.innerText = count
+      })
+    
+    </script>
+  </div>
+</body>
+</html>

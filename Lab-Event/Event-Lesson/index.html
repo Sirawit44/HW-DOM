@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- <form action="" method="" enctype="">
+    <label for="">Email:</label>
+    <input type="text" placeholder="Enter yuor Email" />
+    <label for="">Password:</label>
+    <input type="password" placeholder="Enter your password" />
+    <button>Login</button>
+  </form> -->
+  <!--way 1-->
+  <!-- <button onclick="alert('clickeddddd')">Click</button> -->
+  <button>click</button>
+  <ul>
+    <li name="John">john</li>
+    <li name="Jame">Jame</li>
+    <li name="Jim">jim</li>
+  </ul>
+
+  <input type="text" placeholder="Enter the text" value="resssss"/>
+
+  <script>
+
+    const button = document.querySelector('button')
+
+    // const input = document.querySelector('input')
+    // input.addEventListener('input',function(event) {
+    //   console.log(event.target.value)
+    // })
+
+
+
+
+
+
+
+
+    // const li = document.querySelector('li')
+    // for (let li of list) {
+    //   li.addEventListener('click', function(){
+    //     console.log(this.name)
+    //   })
+    // }
+
+
+    // way 2
+    // const button = document.querySelector('button')
+    // button.onclick = function () {
+    //   alert('clickkkkkk#2')
+    // }
+
+    // function click1(){
+    //   alert('click___1')
+    // }
+
+    // function click2(){
+    //   alert('click___2')
+    // }
+    // //way3
+    // button.addEventListener('click',click1)
+    // button.addEventListener('click',click2)
+
+    // setTimeout(()=> {
+    //   button.removeEventListener('click',click1)
+    // })
+
+    // button.addEventListener('click',function(){
+    //   // console.log(this)
+    // })
+
+    document.body.addEventListener('click',function(event){
+      console.log(event.target)
+      console.log('------------------')
+      console.log(event.currentTarget)
+    })
+
+  </script>
+
+
+
+
+</body>
+</html>

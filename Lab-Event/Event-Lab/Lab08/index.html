@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .active{
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <button class="hide">hide</button>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius eos sunt ratione velit dolore accusamus molestias. Vero dignissimos soluta quod ab corporis magnam rerum ipsum dicta veritatis non? Nulla, hic?</p>
+
+  <script>
+    const button1 = document.querySelector('.hide')
+    const button2 = document.querySelector('.show')
+    const p = document.querySelector('p')
+
+    button1.addEventListener('click',()=>{
+      if (button1.innerHTML === 'show'){
+        button1.innerHTML = 'hide'
+      }
+      else{
+        button1.innerHTML = 'show'
+      }
+      p.classList.toggle ('active')
+    })
+  </script>
+</body>
+</html>
